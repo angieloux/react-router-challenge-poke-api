@@ -1,4 +1,4 @@
-# Challenge Title
+## PokeAPI-mirroring SPA
 
 ## Setup
 
@@ -10,11 +10,48 @@
 6. Verify the application runs as expected
 
 ### What you should see
-_Add an image and/or description of what will be seen when the scaffold successfully runs_
+<img src="./docs/Challenge_starter.png" style="zoom:50%;" />
 
 
 ## Challenge
-_Description of the challenge, with clear steps. It may help to include a link to a video showing the completed working application._
+This challenge requires you to build a ReactJS app that... well... it just pulls data from the PokeAPI and shows it in HTML directly. Think back to those PokeAPI ExpressJS and vanilla JS + HTML challenges -- the power of React lets you combine those into a single project!
+
+
+So, here's what we need at an 'overview' level:
+
+- When you visit the root of the webpage (eg. localhost:3000 or "/"), it just shows a nice title. Maybe some instructions. Up to you. Also Add a nav that lets you switch between Home page and PokeList
+
+<img src="./docs/challenge_complete_1.png" style="zoom:50%;" />
+
+- When you vist "/pokLlist" it will fetch a list of poke name and you should be able to click on each pokename which will then take you to the dynamic poke route
+
+<img src="./docs/challenge_complete_2.png" style="zoom:50%;" />
+
+- When you visit the "/pokemon/:pokemonName" route (eg. localhost:3000/pokemon/pikachu), it will fetch the right data from the PokeAPI and show both the name & one sprite (image) of the Pokemon on the page in a nice H1 tag.
+
+<img src="./docs/challenge_complete_3.png" style="zoom:50%;" />
+
+<img src="./docs/challenge_complete_4.png" style="zoom:50%;" />
+
+## Resources
+
+- https://reactrouter.com/web/guides/quick-start
+- https://reactrouter.com/web/api/Hooks/useparams
+- https://reactrouter.com/web/api/Link
+- https://reactrouter.com/web/api/Route
+
+
+
+## Hints Worth Googling
+
+- React router params
+- Passing JS data to React render/return HTML blocks
+- If you're going through the React functional component style:
+  - React functional component async
+  - React functional component fetch
+  - React hooks (useState, useParams, useEffect)
+- Conditional rendering in React
+  - *Cool tip:* Any React component or "page" that relies on external data in its rendering will always have at least one "frame" or brief moment of time where it has no data to render. When that happens, it errors out & crashes. So you need to check if your data exists before rendering your content!
 
 ## Tests and Submitting
 
