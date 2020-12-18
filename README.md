@@ -21,17 +21,17 @@ So, here's what we need at an 'overview' level:
 
 - When you visit the root of the webpage (eg. localhost:3000 or "/"), it just shows a nice title. Maybe some instructions. Up to you. Also Add a nav that lets you switch between Home page and PokeList
 
-<img src="./docs/challenge_complete_1.png" style="zoom:50%;" />
+<img src="./docs/challenge_complete_1.png" style="zoom:40%;" />
 
 - When you vist "/pokLlist" it will fetch a list of poke name and you should be able to click on each pokename which will then take you to the dynamic poke route
 
-<img src="./docs/challenge_complete_2.png" style="zoom:50%;" />
+<img src="./docs/challenge_complete_2.png" style="zoom:40%;" />
 
 - When you visit the "/pokemon/:pokemonName" route (eg. localhost:3000/pokemon/pikachu), it will fetch the right data from the PokeAPI and show both the name & one sprite (image) of the Pokemon on the page in a nice H1 tag.
 
-<img src="./docs/challenge_complete_3.png" style="zoom:50%;" />
+<img src="./docs/challenge_complete_3.png" style="zoom:40%;" />
 
-<img src="./docs/challenge_complete_4.png" style="zoom:50%;" />
+<img src="./docs/challenge_complete_4.png" style="zoom:40%;" />
 
 ## Resources
 
@@ -44,6 +44,7 @@ So, here's what we need at an 'overview' level:
 
 ## Hints Worth Googling
 
+- Install react-router-dom
 - React router params
 - Passing JS data to React render/return HTML blocks
 - If you're going through the React functional component style:
@@ -66,6 +67,4 @@ At any time you can run `yarn test` to see your progress. By default it will run
 7. Wait and watch the final tests run, if you are successful it will automatically let your educators know you are finished.
 
 ## Example solution
-_Remove this section if you have not provided an example solution. Change the details below if necessary_
-
 An example solution can be found in the challenge-complete branch of this repository.
