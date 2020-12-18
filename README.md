@@ -14,20 +14,30 @@
 
 
 ## Challenge
-This challenge requires you to build a ReactJS app that... well... it just pulls data from the PokeAPI and shows it in HTML directly. Think back to those PokeAPI ExpressJS and vanilla JS + HTML challenges -- the power of React lets you combine those into a single project!
-
+This challenge requires you to build a ReactJS app that... well... it just pulls data from the PokeAPI and shows it in HTML directly. Think back to those PokeAPI NodeJS and vanilla JS + HTML challenges -- the power of React lets you combine those into a single project!
 
 So, here's what we need at an 'overview' level:
 
-- When you visit the root of the webpage (eg. localhost:3000 or "/"), it just shows a nice title. Maybe some instructions. Up to you. Also Add a nav that lets you switch between Home page and PokeList
-
+1. When you visit the root of the webpage (eg. localhost:3000 or "/"), it just shows the title '**Pokemon Viewer**'. You can add some instructions if you like. This is the home page.
+2. Add a nav that displays on all pages and lets you switch between Home page and PokeList
+ 
+   - Add a `Link` for 'Home' that links `to` '/' 
+   - Add a `Link` for 'Poke List' that links `to` '/pokelist' 
+   
 <img src="./docs/challenge_complete_1.png" style="zoom:40%;" />
 
-- When you vist "/pokLlist" it will fetch a list of poke name and you should be able to click on each pokename which will then take you to the dynamic poke route
+3. When you vist "/pokelist" it should fetch a list of pokemon names and display them on the screen as links.
+   - The page should have the title '**Pokemons**'. 
+   - Use the pokeapi to get the list:
+  ```
+	fetch(`https://pokeapi.co/api/v2/pokemon`)
+  ```
+
+4. You should be able to click on each pokemon name, which will then take you to the dynamic pokemon route for that pokemon
 
 <img src="./docs/challenge_complete_2.png" style="zoom:40%;" />
 
-- When you visit the "/pokemon/:pokemonName" route (eg. localhost:3000/pokemon/pikachu), it will fetch the right data from the PokeAPI and show both the name & one sprite (image) of the Pokemon on the page in a nice H1 tag.
+5. When you visit the "/pokemon/:pokemonName" route (eg. localhost:3000/pokemon/pikachu), it will fetch the right data from the PokeAPI and show both the name & one sprite (image) of the Pokemon on the page in a nice H1 tag.
 
 <img src="./docs/challenge_complete_3.png" style="zoom:40%;" />
 
@@ -39,8 +49,6 @@ So, here's what we need at an 'overview' level:
 - https://reactrouter.com/web/api/Hooks/useparams
 - https://reactrouter.com/web/api/Link
 - https://reactrouter.com/web/api/Route
-
-
 
 ## Hints Worth Googling
 
