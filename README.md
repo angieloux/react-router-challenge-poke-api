@@ -22,11 +22,11 @@ So, here's what we need at an 'overview' level:
 2. Add a nav that displays on all pages and lets you switch between Home page and PokeList
  
    - Add a `Link` for 'Home' that links `to` '/' 
-   - Add a `Link` for 'Poke List' that links `to` '/pokelist' 
+   - Add a `Link` for 'Poke List' that links `to` '/pokeList' 
    
 <img src="./docs/challenge_complete_1.png" style="zoom:40%;" />
 
-3. When you vist "/pokelist" it should fetch a list of pokemon names and display them on the screen as links.
+3. When you vist "/pokeList" it should fetch a list of pokemon names and display them on the screen as links.
    - The page should have the title '**Pokemons**'. 
    - Use the pokeapi to get the list:
   ```
