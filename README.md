@@ -1,4 +1,7 @@
-## PokeAPI-mirroring SPA
+# PokeAPI-mirroring SPA
+This is my solution to the below challenge that required building a small ReactJS app that pulls data from the PokeAPI and conditionally displays it.
+
+<br>
 
 ## Setup
 
