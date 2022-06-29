@@ -8,13 +8,13 @@ import {
 } from "react-router-dom";
 import Home from "./components/Home";
 import PokeList from "./components/PokeList";
+import Pokemon from "./components/Pokemon";
 import {getPokemon} from './utils/services'
 
 
 const App = () => {
 
-  const [allPokemon, setAllPokemon] = useState([])
-// const [pokemon, setPokemon] = useState([])
+  const [allPokemon, setAllPokemon] = useState([]) 
 
 useEffect(() => {
   getPokemon(setAllPokemon)
@@ -35,6 +35,7 @@ useEffect(() => {
         </nav>
 
         <Routes>
+          <Route path="/pokemon/:pokemonName" element={<Pokemon allPokemon={allPokemon}/>} />
           <Route path="/" index element={<Home/>} />
           <Route path="pokeList" element={<PokeList allPokemon={allPokemon}/>} />
           <Route path="*" element={<Navigate to="/" replace />} />
