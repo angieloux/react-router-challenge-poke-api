@@ -9,3 +9,4 @@ export const getPokemon = async (callback) => {
     .catch(error => console.log(error));
     
 }
+

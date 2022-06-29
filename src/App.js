@@ -9,7 +9,7 @@ import {
 import Home from "./components/Home";
 import PokeList from "./components/PokeList";
 import Pokemon from "./components/Pokemon";
-import {getPokemon} from './utils/services'
+import {getPokemon} from './utils/pokemon'
 
 
 const App = () => {
@@ -35,9 +35,9 @@ useEffect(() => {
         </nav>
 
         <Routes>
-          <Route path="/pokemon/:pokemonName" element={<Pokemon allPokemon={allPokemon}/>} />
+          <Route path="/pokemon/:pokemonURL" element={<Pokemon allPokemon={allPokemon} setAllPokemon={setAllPokemon}/>} />
           <Route path="/" index element={<Home/>} />
-          <Route path="pokeList" element={<PokeList allPokemon={allPokemon}/>} />
+          <Route path="pokeList" index element={<PokeList allPokemon={allPokemon}/>} />
           <Route path="*" element={<Navigate to="/" replace />} />
         </Routes>
       </Router>
